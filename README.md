@@ -1,4 +1,4 @@
-# Software Craftsmanship - od studenta do pr
+# Software Craftsmanship
 
 Prezentacja "Software Craftsmanship - od studenta do profesjonalisty"
 
