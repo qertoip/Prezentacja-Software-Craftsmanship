@@ -1,0 +1,310 @@
+Software Craftsmanship - od studenta do profesjonalisty
+=======================================================
+:author:    Piotr 'Qertoip' Włodarek
+:copyright: Piotr 'Qertoip Włodarek 2012
+:email:     qertoip@gmail.com
+:backend:   slidy
+:max-width: 45em
+:data-uri:
+:icons:
+
+
+O czym będę mówił?
+------------------
+
+- Ewolucja metodologii: waterfall -> agile -> craftsmanship
+- 4 zasady profesjonalnego programowania
+- Garść porad praktycznych
+- Podsumowanie
+
+Na czym polega model wodospadowy?
+---------------------------------
+
+Etapy projektu:
+
+* Analiza
+* Projektowanie
+* Implementacja
+* Testowanie
+* Wdrożenie
+* Utrzymywanie
+
+Każdy kolejny etap projektu może się rozpocząć dopiero po formalnym zakończeniu (__zamrożeniu__) poprzedniego etapu.
+
+[verse]
+__________________________
+"Measure twice, cut once."
+__________________________
+
+
+Model wodospadowy zawiódł
+-------------------------
+
+[float]
+=== Model wodospadowy konsekwentnie zawodzi w każdym nietrywialnym projekcie
+
+Dlaczego?
+
+* Klient nie zna swoich wymagań
+  ** Ale jak zobaczy aplikację, będzie wiedział że nie o to mu chodziło
+  ** Nawet jeśli klient znałby precyzyjnie swoje wymagania, te zmienią się zanim aplikacja powstanie
+* Nie da się z góry przewidzieć wszystkich kwestii implementacyjnych
+  ** A zatem nie da się dokładnie zaprojektować aplikacji przed implementacją
+* Nie da się implementować bez jednoczesnego testowania
+* Wiele problemów technicznych wychodzi dopiero przy wdrażaniu aplikacji
+  ** Np. ograniczenia środowiska produkcyjnego
+
+Zapomnijmy o nieszczęsnym modelu wodospadowym
+---------------------------------------------
+
+* Jeśli stosujesz model wodospadowy, robisz to źle
+* Jeśli nie waterfall, to co?
+* Podejście iteracyjne
+  ** ale je przeskoczymy
+  ** aby od razu zająć się podejściem "agile"
+
+Agile manifesto
+---------------
+
+Agile Manifesto:
+
+* __Jednostki i interakcje__ są ważniejsze niż procesy i narzędzia
+* __Działające oprogramowanie__ jest ważniejsze niż szczegółowa dokumentacja
+* __Współpraca z klientem__ jest ważniejsza niż negocjowanie kontraktu
+* __Dostosowanie się do zmian__ jest ważniejsze od realizacji planu
+
+Dostrzegamy wartość rzeczy umieszczonych po prawej stronie ale te po lewej cenimy bardziej.
+
+Agile - rozwinięcie
+-------------------
+
+* Satysfakcja klienta poprzez wczesne i częste dostarczanie przydatnego oprogramowania
+* Otwartość na zmianę wymagań, nawet na późnym etapie
+* Działające oprogramowanie jest dostarczane często (tygodnie, nie miesiące)
+* Działające oprogramowanie jest główną miarą postępu
+* Rozsądne, możliwe do utrzymania tempo prac
+* Ścisła, codzienna współpraca programistów, biznesu i klienta
+* Rozmowa twarzą w twarz jest najlepszą formą komunikacji
+* Projekty budowane wokół zmotywowanych jednostek, którym należy zaufać
+* Trwała troska o jakość techniczną
+* Prostota
+* Samo-organizujące się zespoły
+* Regularna adaptacja do zmieniających się warunków
+
+Agile - przykładowe ucieleśnienia
+---------------------------------
+
+Przykładowe metodyki agile:
+
+* SCRUM
+* Extreme Programming
+* Agile Unified Process
+* Feature Driven Development
+* Crystal Clear
+
+Agile - podsumowanie
+--------------------
+
+Podsumowanie:
+
+* podejście agile przywraca zdrowy rozsądek w wytwarzaniu oprogramowania
+* ...ale czasem zawodzi. Dlaczego?
+
+Agile - dlaczego czasem zawodzi?
+--------------------------------
+
+[role="incremental"]
+* Metodyki agile to tylko procesy, schematy działania
+* Pracę wykonują konkretne osoby
+* Metodyki agile dają jednostce dużo swobody
+* Agile zawodzi z powodu __niekompetencji programistów__
+* __Nie ma nic gorszego niż niekompetentni programiści pracujący "agile" :-)__
+
+Autorefleksja programistów
+--------------------------
+
+[role="incremental"]
+* to przez nas nie udają się projekty
+* nie chcemy więcej tworzyć crapu
+* jesteśmy zmęczeni złym kodem (który sami napisaliśmy)
+* czas wziąć odpowiedzialność
+* wziąć się za siebie :-)
+* __Software Craftsmanship__
+
+Software Craftsmanship Manifesto
+--------------------------------
+
+Software Craftsmanship Manifesto:
+
+* Nie tylko działające oprogramowanie, ale także __dobrze napisane oprogramowanie__
+* Nie tylko dostosowanie się do zmian, ale także __stałe zwiększanie wartości biznesowej__
+* Nie tylko jednostki i interakcje, ale także __społeczność profesjonalistów__
+* Nie tylko współpraca z klientem, ale także __produktywne partnerstwo__
+
+Software Craftsman - kto to taki?
+---------------------------------
+
+__Software Craftsman__ to programista, który:
+
+* jest kompetentny
+* zrobi to dobrze, niezależnie od presji czasu i szefa
+* czuje się osobiście odpowiedzialny za kod
+* jest dumny ze swojej pracy
+* jest gotów podpisać się pod swoim kodem
+* nieustannie uczy się programowania
+* pisze kod
+  ** np. nie jest menadżerem lub "niepiszącym architektem"
+* wzmacnia społeczność programistów
+
+
+Software Craftsmanship
+----------------------
+
+To idea, że programista pełni centralną rolę w tworzeniu oprogramowania i
+jest osobiście odpowiedzialny za jakość produktu i kodu.
+
+[quote, Pete McBreen, Software Craftsmanship]
+Software Craftsmanship is a call to arms for programmers: an impassioned manifesto that restores the developer to a central role in large-scale projects [...]. Software Craftsmanship transcends "software engineering", demonstrating that quality software can't simply be "manufactured": it must be built by craftspeople with pride in their work, and a personal commitment to excellence.
+
+
+4 zasady profesjonalnego programowania
+--------------------------------------
+
+__Do czego doszliśmy (jako branża) po 65 latach programowania komputerów?__
+
+[role="incremental"]
+* krótkie iteracje
+* inkrementalność procesów
+* test driven development
+* the only way to go fast is to go well
+
+
+Krótkie iteracje
+----------------
+
+* przez __iterację__ rozumiemy cały proces
+  ** analiza wymagań, projektowanie, implementacja, testowanie, (opcjonalne) wdrożenie
+* iteracja powinna trwać ok. 1-2 tygodnie (zawsze tyle samo)
+* częsta informacja zwrotna od klienta
+  ** rozpoczyna każdą iterację
+* minimalizacja ryzyka
+* dotyczy także, a nawet przede wszystkim __dużych projektów__
+  ** które, nawiasem mówiąc, muszą być wcześniej rozbite na mniejsze podprojekty
+    *** realizowane w małych zespołach
+
+Inkrementalność procesów
+------------------------
+
+* __każdy__ proces powinien mieć charakter inkrementalny, a nie skokowy
+* przykłady:
+  ** inkrementalne dodawanie funkcjonalności (w krótkich iteracjach)
+    *** dodawanie wielu "feature'ów" jednocześnie jest złe
+  ** inkrementalne testowanie
+    *** testowanie __dopiero__ po skończeniu pracy jest złe
+  ** inkrementalny refactoring
+    *** big-rewrite jest zły
+  ** ciągłe budowanie projektu (continuous integration)
+    *** budowanie __dopiero__ na zakończenie iteracji jest złe
+  ** inkrementalne wdrażanie
+    *** wielkie wdrażania są złe
+  ** ...
+
+
+Test Driven Development
+-----------------------
+
+* automatyzacja testów to za mało
+* testy należy pisać __jednocześnie__ z kodem
+* "jednocześnie" oznacza, że
+  ** __najpierw__ piszemy fragment testu
+  ** __potem__ piszemy fragment kodu
+* taka iteracja trwa dziesiątki sekund do kilku minut
+* programista pracuje w pętli
+  ** [fragment testu] -> [fragment kodu] -> [fragment testu] -> [fragment kodu]...
+* dążenie do 100% pokrycia
+  ** w praktyce nieosiągalne, ale nie zmienia faktu że jest to celem, kierunkiem
+* TDD wymaga dużej dyscypliny
+
+Test Driven Development - wyjątki
+---------------------------------
+
+Kiedy można "bez grzechu" nie używać TDD?
+
+* kod "eksperymentalny"
+  ** służący zrozumieniu zagadnienia, biblioteki, itp
+  ** przeznaczony do wyrzucenia
+* "najtwardsze" GUI
+  ** całkowicie pozbawione logiki, sterowania
+  ** deklaratywny rozkład elementów, styli itp
+
+
+The only way to go fast is to go well
+---------------------------------------
+
+Bottom line:
+
+* złe praktyki mszczą się natychmiast, a nie w oddalonej przyszłości
+
+Przykłady:
+
+* "testy napiszemy później, teraz najważniejszy jest deadline"
+  ** "później" tym bardziej nie będzie czasu
+  ** nawet jeśli czas się znajdzie, testy pisane po fakcie oznaczają __utratę większości korzyści TDD__
+* "refactoring zrobimy później, teraz najważniejszy jest deadline"
+  ** "później" tym bardziej nie będzie czasu
+  ** zły kod spowalnia natychmiast, nie w przyszłości - marny trade-off
+* "zautomatyzujemy to później, teraz nie ma na to czasu"
+  ** WTF??
+
+Uwagi:
+
+* "well" nie znaczy "perfect": pragmatyzm zamiast perfekcjonizmu
+
+4 zasady profesjonalnego programowania
+--------------------------------------
+
+__Do czego doszliśmy (jako branża) po 65 latach programowania komputerów?__
+
+* krótkie iteracje
+* inkrementalność procesów
+* test driven development
+* "the only way to go fast is to go well"
+
+
+Garść porad praktycznych
+------------------------
+
+__UWAGA__ - poniższa wiedza ma krótki termin przydatności do spożycia (szybko się deaktualizuje)
+
+* używaj githuba
+  ** hackowanie na sterydach, rewolucyjna platforma współpracy programistów
+* używaj stackoverflow
+  ** tu najszybciej uzyskasz prawidłową i kompletną odpowiedź nawet na niszowe pytanie
+  ** największa społeczność __kompetentnych__ programistów
+* używaj IDE
+  ** oferują auto-refactoring niedostępny w lekkich edytorach tekstowych
+  ** najlepsze IDE na świecie robi czeski JetBrains (np. IntelliJ IDEA)
+* używaj rozproszonych VCS
+  ** git, mercurial, bazaar, veracity(?)
+  ** zapomnij o CVS i SVN
+* używaj menadżera haseł
+  ** z automatyzacją wpisywania w formularze
+
+Podsumowanie
+------------
+
+Mówiliśmy o:
+
+* Ewolucja metodologii: waterfall -> agile -> craftsmanship
+* 4 zasady profesjonalnego programowania
+* Garść porad praktycznych
+
+Call to Action... ->
+--------------------
+
+Craftsmanship over Crap!
+------------------------
+
+http://manifesto.softwarecraftsmanship.org
+
+NOTE: Dziękuję za uwagę. Prezentacja jest dostępna na moim blogu http://TheSingularity.pl
